@@ -21,6 +21,7 @@ module_entry(
         "driver/vidc/src/resources.c",
         "driver/vidc/src/resources_ext.c",
         "driver/vidc/src/firmware.c",
+        "driver/vidc/src/firmware.h",
         "driver/vidc/src/msm_vidc_debug.c",
         "driver/vidc/src/msm_vidc_memory.c",
         "driver/vidc/src/msm_vidc_memory_ext.c",
@@ -48,6 +49,7 @@ module_entry(
     deps = [
             "//vendor/qcom/opensource/mm-drivers:mm_drivers_headers",
             "//vendor/qcom/opensource/synx-kernel:synx_headers",
+            "//vendor/qcom/opensource/video-driver:vidc_headers",
         ],
 )
 
@@ -67,6 +69,7 @@ module_entry(
         "driver/vidc/src/msm_vidc_probe.c",
         "driver/vidc/src/resources.c",
         "driver/vidc/src/firmware.c",
+        "driver/vidc/src/firmware.h",
         "driver/vidc/src/msm_vidc_debug.c",
         "driver/vidc/src/msm_vidc_memory.c",
         "driver/vidc/src/msm_vidc_fence.c",
@@ -87,5 +90,10 @@ module_entry(
             "driver/variant/iris33/src/msm_vidc_clock_iris33.c",
             "driver/variant/iris33/src/msm_vidc_iris33.c",
         ],
-    }
+    },
+    deps = [
+            "//vendor/qcom/opensource/mm-drivers:mm_drivers_headers",
+            "//vendor/qcom/opensource/synx-kernel:synx_headers",
+            "//vendor/qcom/opensource/video-driver:vidc_headers",
+        ],
 )
